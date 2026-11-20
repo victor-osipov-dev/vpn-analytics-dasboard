@@ -1,0 +1,12 @@
+[package]
+name = "netscope-network"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+netscope-core = { path = "../netscope-core" }
+netscope-platform-windows = { path = "../netscope-platform-windows" }
+tokio.workspace = true
+serde.workspace = true
+tracing.workspace = true
+sha2 = "0.10"

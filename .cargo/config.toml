@@ -1,0 +1,5 @@
+# reqwest 0.12 exposes HTTP/3 behind an unstable feature gate. NetScope uses
+# it for the QUIC-restriction check in deep diagnostics, so enable the flag
+# project-wide. Safe: the cfg is only read by reqwest.
+[build]
+rustflags = ["--cfg", "reqwest_unstable"]

@@ -1,0 +1,16 @@
+[package]
+name = "netscope-platform-windows"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+netscope-core = { path = "../netscope-core" }
+winreg = "0.55"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_NetworkManagement_Ndis",
+    "Win32_Networking_WinSock",
+] }

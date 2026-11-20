@@ -1,0 +1,8 @@
+[package]
+name = "netscope-analyzer"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+netscope-core = { path = "../netscope-core" }
+tracing.workspace = true

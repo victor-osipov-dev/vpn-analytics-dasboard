@@ -1,0 +1,19 @@
+[package]
+name = "netscope-routes"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+netscope-core = { path = "../netscope-core" }
+netscope-network = { path = "../netscope-network" }
+netscope-probes = { path = "../netscope-probes" }
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+async-trait.workspace = true
+uuid.workspace = true
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls-webpki-roots", "json"] }
+
+[target.'cfg(windows)'.dependencies]
+netscope-platform-windows = { path = "../netscope-platform-windows" }

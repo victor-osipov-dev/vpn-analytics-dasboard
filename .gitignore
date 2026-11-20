@@ -1,0 +1,24 @@
+# Rust
+/target/
+**/target/
+Cargo.lock.bak
+
+# Node / Vite
+node_modules/
+/dist/
+**/dist/
+*.local
+
+# Tauri generated
+apps/desktop/src-tauri/gen/
+apps/desktop/src-tauri/target/
+
+# Logs and temp
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
